@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beekeeper-CodingWatch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="FRONTEND MOVIE SERIES.css">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.wrapper{
+    min-height: 100vh;
+    background-color:#151515;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+img{
+    height: 60px;
+    padding: 15px;
+    padding-left: 75px;
+
+}
+
+nav{
+    color: white;
+}
+
+header nav ul{
+    display: flex;
+    gap: 70px;
+    list-style-type: none;
+    padding-right: 150px;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+    
+}
+
+header{
+    height: 10.3vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+/* .sidebar{
+    list-style-type: none;
+    width: 55px;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    top: 10.3vh;
+
+    top sonradan eklendı
+} */
+
+.esasyer{
+    margin-left: 55px;
+    padding-top: 10.3vh;
+    padding-left: 20px;
+    
+}
+
+
+
+.drop_1{
+    position: absolute;
+    left: 0;
+    top: 44px;
+    background-color: gray;
+    width: 700px;
+    height: 500px;
+    display: none;
+    
+}
+
+nav li:hover .drop_1{
+    display: block;
+}
+
+.birinci,.ikinci,.üçüncü{
+    float: left;
+}
+
+.başlık{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.bilgi{
+    padding-left: 30px;
+    padding-top: 30px;
+    /* display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    gap: 30px; */
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 45px;
+}
+
+#bilgi1,#bilgi2,#bilgi3,#bilgi4{
+    width: 250px;
+    height: 349px;
+    /* border: 1px solid orangered; */
+}
+
+#bilgi1{
+    background-image: url(afiş2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bilgi4 div{
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid white;
+}
+
+.ikili{
+    padding-left: 30px;
+    padding-right: 70px;
+    display: grid;
+    grid-template-columns: 0.65fr auto;
+}
+
+.bir,.iki{
+    border: 1px solid red;
+}
+
+.cast-list{
+    display: flex;
+    justify-content:space-between ;
+    gap: 20px;
+}
+
+#person-1,#person-2,#person-3,#person-4,#person-5{
+    /* border: 1px solid tomato; */
+    width: 150px;
+    height: 200px;
+    border-radius: 7%;
+}
+
+/* OYUNCULAR RESIM KISMI */
+
+.resimli1{
+    width: 150px;
+    height: 155px;
+    background-image: url(Jason\ statham.jpg);
+    border-radius: 7%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.resimli2{
+    width: 150px;
+    height: 155px;
+    background-image: url(Jason\ statham.jpg);
+    border-radius: 7%;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.resimli3{
+    width: 150px;
+    height: 155px;
+    background-image: url(Jason\ statham.jpg);
+    border-radius: 7%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.resimli4{
+    width: 150px;
+    height: 155px;
+    background-image: url(Jason\ statham.jpg);
+    border-radius: 7%;   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.resimli5{
+    width: 150px;
+    height: 155px;
+    background-image: url(Jason\ statham.jpg);
+    border-radius: 7%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* .yazılı{
+    padding-top: 12px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE NAVBAR */
+
+/* @media (max-width:992px){
+    nav .liste1{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+} */
+
+
+
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="img-container">
+                <img src="CodingWatch.png" alt="İzlemenin Kodlanmış Hali...">
+            </div>
+            <nav>
+                <ul class="liste1">
+                    <li class="one"><i class="fa-solid fa-house"></i></li>
+                    <li class="two">Trend
+                        <div class="drop_1">
+                            <div class="birinci">
+                                <h4>Sinema Filmleri</h4>
+                                <ul style="display: block;padding-left: 15px;">
+                                    <li>TAB1</li>
+                                    <li>TAB2</li>
+                                    <li>TAB3</li>
+                                    <li>TAB4</li>
+                                    <li>TAB5</li>
+                                </ul>
+                            </div>
+                            <div class="ikinci">
+                                <h4>Sinema Filmleri</h4>
+                                <ul style="display: block;padding-left: 15px;">
+                                    <li>TAB1</li>
+                                    <li>TAB2</li>
+                                    <li>TAB3</li>
+                                    <li>TAB4</li>
+                                    <li>TAB5</li>
+                                </ul>
+                            </div>
+                            <div class="üçüncü">
+                                <h4>Sinema Filmleri</h4>
+                                <ul style="display: block;padding-left: 15px;">
+                                    <li>TAB1</li>
+                                    <li>TAB2</li>
+                                    <li>TAB3</li>
+                                    <li>TAB4</li>
+                                    <li>TAB5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="three">Diziler
+                        <div class="drop_1">
+                            <div class="birinci">
+                                <h4>Sinema Filmleri</h4>
+                                <ul style="display: block;padding-left: 15px;">
+                                    <li>TAB1</li>
+                                    <li>TAB2</li>
+                                    <li>TAB3</li>
+                                    <li>TAB4</li>
+                                    <li>TAB5</li>
+                                </ul>
+                            </div>
+                            <div class="ikinci">
+                                <h4>Sinema Filmleri</h4>
+                                <ul style="display: block;padding-left: 15px;">
+                                    <li>TAB1</li>
+                                    <li>TAB2</li>
+                                    <li>TAB3</li>
+                                    <li>TAB4</li>
+                                    <li>TAB5</li>
+                                </ul>
+                            </div>
+                            <div class="üçüncü">
+                                <h4>Sinema Filmleri</h4>
+                                <ul style="display: block;padding-left: 15px;">
+                                    <li>TAB1</li>
+                                    <li>TAB2</li>
+                                    <li>TAB3</li>
+                                    <li>TAB4</li>
+                                    <li>TAB5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="four">Filmler</li>
+                    <li class="five">Kanallar</li>
+                    <li class="six">Haberler</li>
+                    <a style="text-decoration: none; color: white;" href="file:///C:/Users/Lenovo/Desktop/CSS%20HTML%20PROJE/FRONTEND%20PROJE/FILM%20FORM%20SAYFASI.html">Kaydol</a>
+                </ul>      
+            </nav>
+        </header>
+        <main>
+            <!-- <div class="sidebar">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-users"></i></li>
+                <li><i class="fa-solid fa-bookmark"></i></li>
+                <li><i class="fa-solid fa-tv"></i></li>
+                <li><i class="fa-solid fa-comment"></i></li>
+                <li><i class="fa-solid fa-circle-info"></i></li>
+                <li><i class="fa-solid fa-flag"></i></li>
+            </div> -->
+            <div class="esasyer">
+                <div class="başlık">
+                    <h2>The Beekeeper (Arıcı: Ölüm Kovanı)</h>
+                    <h6>2024 | 1sa 45dk </h6>
+                </div>
+                <div class="bilgi">
+                    <div id="bilgi1"></div>
+                    <div id="bilgi2">
+                        <span style="color: orangered; font-size: larger;">Filmin türü:</span>
+                        <span style="display: block;">Gerilim, Aksiyon</span>
+                        <br>
+                        <span style="color: orangered; font-size: larger;">Yönetmen:</span>
+                        <span style="display: block;">David Ayer</span>
+                        <br>
+                        <span style="color: orangered; font-size: larger;">Senarist:</span>
+                        <span style="display: block;">Kurt Wimmer</span>
+                        <br>
+                        <span style="color: orangered; font-size: larger;">Oyuncular (Cast):</span>
+                        <span style="display: block;">Jason Statham, Josh Hutcherson, Jeremy Irons</span>
+                    </div>
+                    <div id="bilgi3">
+                        <span style="color: orangered; font-size: larger;">Vizyon Tarihi:</span>
+                        <span style="display: block;">12 Ocak 2024</span>
+                        <br><br><br>
+                        <span style="color: orangered; font-size: larger;">Sinema Dağıtım:</span>
+                        <span style="display: block;">CGV Mars D.</span>
+                        <br><br><br>
+                        <span style="color: orangered; font-size: larger;">Ülke:</span>
+                        <span style="display: block;">ABD, Birleşik Krallık</span>
+                    </div>
+                    <div id="bilgi4">
+                        <div><i class="fa-solid fa-star" style="font-size: xx-large; color: orangered;"></i><span><span style="font-size: xx-large;">  7.2</span> /10</span></div>
+                        <div><i class="fa-brands fa-imdb" style="color: #FFD43B;font-size:2.3rem;"></i><span><span style="font-size: xx-large;">  6.7</span> /10</span></div>
+                        <div><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i></div>
+                        <div><i class="fa-brands fa-imdb" style="color: #FFD43B;"></i></div>
+                    </div>
+                </div>
+                <br>
+                <hr style="width: 96%;">
+                <div class="ikili">
+                    <div class="bir">
+                       <div id="kısım1">
+                        <h4>Filmin <span style="color: orangered;">Konusu</span></h4>
+                        <p>Eski bir ajan olan Adam Clay, değer verdiği insanların bir dolandırıcılık planına kurban gitmesi üzerine intikam almaya karar verir. Dolandırıcıların daha büyük bir amaca hizmet ettiğini öğrenen Clay, bu işin kökünü kazımadan asla durmayacaktır. Fakat dolandırıcıların bilmediği şey, Adam Clay’in eski bir “Beekeeper” ajanı olduğu ve amacına ulaşana kadar kimsenin onu durduramayacağıdır.</p>
+                       </div>
+                       <div id="kısım2">
+                        <h4>Filmin <span style="color: orangered;">Oyuncu Kadrosu</span></h4>
+                        <div class="cast-list">
+                            <div id="person-1">
+                                <div class="resimli1"></div>
+                                <div class="yazılı" >Jason Stanham</div>
+                                <span style="color: grey;font-size:0.9rem;">Adam Clay</span>
+                            </div>
+                            <div id="person-2">
+                                <div class="resimli2"></div>
+                                <div class="yazılı">Josh Hutcherson</div>
+                            </div>
+                            <div id="person-3">
+                                <div class="resimli3"></div>
+                                <div class="yazılı">Jeremy Irons</div>
+                            </div>
+                            <div id="person-4">
+                                <div class="resimli4"></div>
+                                <div class="yazılı">Raver Lampman</div>
+                            </div>
+                            <div id="person-5">
+                                <div class="resimli5"></div>
+                                <div class="yazılı">Bobby Naderi</div>
+                            </div>
+                            
+                        </div>
+                       </div>
+                    </div>
+                    <div class="iki">2</div>
+                </div>
+            </div>
+        </main>
+
+
+
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="FRONTEND PROJE.js"></script>
+</body>
+</html>

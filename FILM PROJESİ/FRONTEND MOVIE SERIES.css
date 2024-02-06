@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.wrapper{
+    min-height: 100vh;
+    background-color:#151515;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    height: 60px;
+    padding: 15px;
+    padding-left: 75px;
+
+}
+
+nav{
+    color: white;
+}
+
+header nav ul{
+    display: flex;
+    gap: 70px;
+    list-style-type: none;
+    padding-right: 150px;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+    
+}
+
+nav ul li{
+    cursor: pointer;
+}
+
+
+
+header{
+    /* height: 10.3vh; */
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+/* .sidebar{
+    list-style-type: none;
+    width: 55px;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    top: 10.3vh;
+    
+    top sonradan eklendı
+} */
+
+.esasyer{
+    margin-left: 0px;
+    padding-top: 10.3vh;
+    
+}
+
+.film-tanıtım{
+    height: 60vh;
+    background-image: url(The-Beekeeper-FI.jpg);
+    /* border: 1px solid green; */
+    /* background: linear-gradient(to bottom,rgba(0,0,0,0),#151515),url(The-Beekeeper-FI.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top:10.3vh ;
+}
+
+#açıklama{
+    width: 50%;
+    height: 100%;
+    color: black;
+    padding-left: 70px;
+    /* padding-top: 10px; */
+}
+
+#açıklama h1 p{
+    font-size: larger;
+}
+
+.trendler{
+    padding: 40px;
+    /* padding-left: 40px; */
+    color: white;
+}
+
+.film-kapakları{
+    padding-top: 40px;
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+#one,#two,#three,#four,#five{
+    width: 220px;
+    height: 450px;
+    /* border: 1px solid turquoise; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 5%;
+    background-color: black;  
+    cursor: pointer; 
+}
+
+
+
+.column1{
+    position: absolute;
+    background-color: #151515;
+    display: none;
+    height: 320px;
+    width: 720px;
+    float: left;
+    border: 1px solid orangered;
+    
+    
+    
+}
+
+.column2{
+    position: absolute;
+    background-color: #151515;
+    display: none;
+    height: 320px;
+    float: left;
+    width: 720px;
+    border: 1px solid orangered;
+}
+
+
+
+nav ul li:hover .column1{
+    display: flex;  
+}
+
+nav ul li:hover .column2{
+    display: flex;
+}
+
+.birinci {
+    padding-left: 15px;
+}
+
+.birinci li{
+    padding-top: 10px;
+    
+}
+
+li a{
+    color: white;
+}
+
+li a:hover{
+    color: yellow;
+}
+
+
+
+/* .column1,.column2 li{
+    text-align: center;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+.resim-1,.resim-2,.resim-3,.resim-4,.resim-5{
+    width: 220px;
+    height: 300px;
+    border-radius: 5%;
+}
+
+.resim-1{
+    background-image: url(afiş1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.resim-2{
+    background-image: url(afiş2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.resim-3{
+    background-image: url(afiş3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.resim-4{
+    background-image: url(reacher.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.resim-5{
+    background-image: url(AtatürkFilm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+.trendler h5{
+    padding-top: 10px;
+}
+
+#iki,#üç,#dört,#beş,#altı{
+    cursor: pointer;
+}
+
+iframe{
+    padding-top: 20px;
+    text-align: center;
+}
+
+dialog i{
+    cursor: pointer;
+}
+
+.youtube::backdrop{
+    background-color: black;
+    opacity: 0.9;
+}
+
+.youtube2::backdrop{
+    background-color: black;
+    opacity: 0.9;
+}
+
+.youtube3::backdrop{
+    background-color: black;
+    opacity: 0.9;
+}
+
+.youtube4::backdrop{
+    background-color: black;
+    opacity: 0.9;
+}
+
+.youtube5::backdrop{
+    background-color: black;
+    opacity: 0.9;
+}
+
+.grid{
+    padding: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: 220px 220px;
+    gap: 40px;
+}
+
+/* .part{
+    width: 580px;
+    height: 220px;
+    border: 1px solid turquoise;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    font-size: large;
+}
+
+#res2{
+    background-image: url(3391\ kolpaçino.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#res4{
+    background-image: url(full5664a8_8djg.1248.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+.kare1,.kare2,.kare3,.kare4,.kare5,.kare6{
+    width: 370px;
+    height: 220px;
+    /* border: 1px solid green; */
+    cursor: pointer;
+
+}
+
+.b1,.b2,.b3,.b4,.b5,.b6{
+    width: 370px;
+    height: 180px;
+    /* border: 1px solid red; */
+}
+
+.b4{
+    background-image: url(Deadpool.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.b1{
+    background-image: url(netflix.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.b2{
+    background-image: url(ahmet\ kural.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.b3{
+    background-image: url(3391\ kolpaçino.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.b5{
+    background-image: url(OSCARS\ 2024.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.b6{
+    background-image: url(oppenheimer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.dahafazla1 h5{
+    padding-right: 80px;
+    color: white;
+    cursor: pointer;
+    text-align: end;
+}
+
+.dahafazla1 h5:hover{
+    color: orangered;
+}
+
+/* ARAMA KISMI */
+
+#search{
+    cursor: pointer;
+}
+
+.arama input::placeholder{
+    padding: 25px;
+    background-color: black;
+}
+
+.arama::backdrop{
+    background-color: black;
+    opacity: 0.9;
+}
+
+.arama{
+    outline: none;
+    border: 1px solid orangered;
+}
+
+.arama input{
+    border: none;
+
+}
+
+.ilk-popup::backdrop{
+    background-color: black;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+/* RESPONSIVE NAVBAR */
+
+/* @media (max-width:992px){
+    nav .liste1{
+        display: none;
+    }
+    .toggle{
+        display: block;
+    }
+} */
+
+
+
+
